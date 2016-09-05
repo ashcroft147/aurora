@@ -1,0 +1,16 @@
+##
+
+## mongo db bin/ 파일 실행
+ 1. PATH등록
+  . export PATH=$PATH:"/Users/Justin/project/mongodb/bin"
+ 
+## mongo db bin/ 파일 실행
+ 1. mongo db 시동 with cfg file
+  . sudo mongod --config /Users/Justin/project/mongodb/mongod.cfg
+
+ 2. mongo 연결
+  . bin>mongo
+
+## mongo db 중지
+ 1. db.shutdownServer()
+ 2. quit()
