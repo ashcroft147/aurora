@@ -1,0 +1,43 @@
+# Mongodb 설치 및 실행
+
+## 다운로드 Mongodb client
+ 1. https://www.mongodb.com/thank-you/download/mongodb-enterprise 접속한다. 
+ 1. 자신의 OS 환경에 맞는 설치파일을 다운로드 한다. 
+
+## Mongodb 설치
+ 1. zip 파일의 압축을 푼다. 
+ 2. 이름은 mongodb 로 수정한다. 
+ 3. C:\mongodb\log 폴더를 생성한다.
+ 4. C:\mongodb\data\ 폴더를 생성한다. 
+
+## Mongodb Conf 파일 설정
+ 1. mongod.conf 파일을 c:\mongodb\ 에 생성한다. 
+ 2. 다음과 같이 설정파일을 만들어 준다.
+
+## Mongodb 시동
+ 1. 다음의 명령어를 사용하여 Mongodb를 configuration 과 함께 실행한다.
+ mongod.exe --config c:\mongodb\mongod.conf
+
+ 2. mongodb에 연결하기 위해서 다음과 같이 진행한다.
+  . 새로운 console을 open한다.
+  . cd:\mongodb\bin 으로 change directory
+  . mongo 실행
+  . 그러면 그림과 같이 mongodb shell client가 시동된다. 
+
+## Mongodb 중지
+ 1. use admin
+ 2. db.shutdownServer()
+ 3. quit()
+
+## Mongodb 셸 스크립트 생성하기
+ 1. 셸 스크립트 실행하는 방법
+  . --eval 파라미터 사용
+  . load(script) 메소드 사용 ex: load("/tmp/test.js")
+
+ 
+# Express로 mongodb 연동하기
+
+## mongoose 설치하기 
+ 1. Project Home으로 이동한다. 
+ 2. mongoose 패키지 설치(ODM)
+  npm install --save mongoose 설치

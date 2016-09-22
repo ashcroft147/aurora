@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'mongoose' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of d:\project\github\aurora\package.json
+5 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\body-parser\package.json
+6 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\cookie-parser\package.json
+7 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\debug\package.json
+8 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\express\package.json
+9 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\jade\package.json
+10 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\morgan\package.json
+11 verbose installManyTop reading scoped package data from d:\project\github\aurora\node_modules\serve-favicon\package.json
+12 verbose readDependencies loading dependencies from d:\project\github\aurora\package.json
+13 silly cache add args [ 'mongoose', null ]
+14 verbose cache add spec mongoose
+15 silly cache add parsed spec { raw: 'mongoose',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'mongoose',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: '*',
+15 silly cache add   type: 'range' }
+16 silly addNamed mongoose@*
+17 verbose addNamed "*" is a valid semver range for mongoose
+18 silly addNameRange { name: 'mongoose', range: '*', hasData: false }
+19 silly mapToRegistry name mongoose
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+23 verbose addNameRange registry:https://registry.npmjs.org/mongoose not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/mongoose
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 12:14:06
+27 verbose request id e457d145e880e23f
+28 http request GET https://registry.npmjs.org/mongoose
+29 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT
+30 info attempt registry request try #2 at 12:14:37
+31 http request GET https://registry.npmjs.org/mongoose
+32 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT
+33 info attempt registry request try #3 at 12:15:58
+34 http request GET https://registry.npmjs.org/mongoose
+35 verbose stack Error: tunneling socket could not be established, cause=connect ETIMEDOUT
+35 verbose stack     at ClientRequest.onError (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:168:17)
+35 verbose stack     at ClientRequest.g (events.js:199:16)
+35 verbose stack     at ClientRequest.emit (events.js:107:17)
+35 verbose stack     at Socket.socketErrorListener (_http_client.js:271:9)
+35 verbose stack     at Socket.emit (events.js:107:17)
+35 verbose stack     at net.js:459:14
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose cwd d:\project\github\aurora
+37 error Windows_NT 6.1.7601
+38 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "mongoose"
+39 error node v0.12.4
+40 error npm  v2.10.1
+41 error code ECONNRESET
+42 error network tunneling socket could not be established, cause=connect ETIMEDOUT
+42 error network This is most likely not a problem with npm itself
+42 error network and is related to network connectivity.
+42 error network In most cases you are behind a proxy or have bad network settings.
+42 error network
+42 error network If you are behind a proxy, please make sure that the
+42 error network 'proxy' config is set properly.  See: 'npm help config'
+43 verbose exit [ 1, true ]
