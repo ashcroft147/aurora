@@ -1,0 +1,12 @@
+1. mongodb를 이해하고 잘 활용한다. 
+ - 
+
+2. phantom.js 와 node와의 관계 ?
+ - phantome.js를 node와 어떻게 연동할 수 있는건가 ?
+ - phantom.js는 무엇인가 ?
+
+3. nodejs 설치된 상태에서 update 하기
+ - https://velopert.com/1351
+
+4. react와 express.js를 연동하기
+ - https://velopert.com/tag/reactcodelab

@@ -1,0 +1,28 @@
+# GET
+
+## find().pretty()
+ - 사람이 parsing 하기 좋은 format으로 return 한다. 
+
+## mongodb의 모든 db 조회
+>> show dbs
+
+## 특정 db의 사용
+>> use <db>
+
+## mongodb의 모든 collection 조회
+>> show collections
+
+## document list 조회
+>> db.COLLECTION_NAME.find()
+
+## 조건에 맞는 document 조회
+>> db.COLLECTION_NAME.find({key:value})
+
+# POST(INSERT)
+
+## collection에 document를 삽입
+>> db.COLLECTION_NAME.insert()
+
+
+# PUT(UPDATE)
+# DELETE(DELETE)

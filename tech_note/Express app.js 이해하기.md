@@ -36,6 +36,7 @@ app.set('view engine', 'jade'); // view 엔진 설정 => Express에게 jade temp
 </pre>
 ---
 
+<<<<<<< HEAD
 ## routes
 ---
 <pre>
@@ -45,3 +46,28 @@ app.use('/users', users);
 ---
 + first parameter: path
 + second parameter:
+=======
+## app.use()
++ use 메소드는 app에게 파라미터로 전달된 것들을 사용하도록 해준다. 파라미터는 function, path and function이 될수도 있다. 
++ 추가설명이 필요함
+---
+<pre>
+app.use(logger('dev')); // request에 대한 로그를 콘솔에 남긴다
+app.use(bodyParser.json()); // app이 json을 parsing할 수 있도록 해준다. 
+app.use(bodyParser.urlencoded({ extended: false })); // Get request의 경우 URL로 부터 데이터를 읽을수 있게 한다. 
+app.use(cookieParser()); // 이것을 사용하면, express서버가 받는 모든 request에 대해서 cookie object를 갖는다.
+app.use(express.static(path.join(__dirname, 'public'))); // public 디렉토리에서 static 파일을 관리하라는 것을 app에게 알려준다.
+</pre>
+---
+
+## Routing method
++ 첫번째 파라미터는 path를 의미, 두번째 파라미터는 실행함수를 의미한다. 
++ app.js에서 route로 분리하는 것은 app.js가 커지는 것을 막기위해서다.
+---
+<pre>
+app.use('/', routes);
+app.use('/users', users);
+</pre>
+---
+
+>>>>>>> 079ed52ed548405b3f04d33657132b8128359823
