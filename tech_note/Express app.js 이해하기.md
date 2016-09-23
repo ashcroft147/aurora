@@ -37,6 +37,7 @@ app.set('view engine', 'jade'); // view 엔진 설정 => Express에게 jade temp
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## routes
 ---
 <pre>
@@ -47,6 +48,8 @@ app.use('/users', users);
 + first parameter: path
 + second parameter:
 =======
+=======
+>>>>>>> 079ed52ed548405b3f04d33657132b8128359823
 ## app.use()
 + use 메소드는 app에게 파라미터로 전달된 것들을 사용하도록 해준다. 파라미터는 function, path and function이 될수도 있다. 
 + 추가설명이 필요함
@@ -70,4 +73,7 @@ app.use('/users', users);
 </pre>
 ---
 
+<<<<<<< HEAD
+>>>>>>> 079ed52ed548405b3f04d33657132b8128359823
+=======
 >>>>>>> 079ed52ed548405b3f04d33657132b8128359823

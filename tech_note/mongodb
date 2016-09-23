@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GET
 
 ## find().pretty()
@@ -26,3 +27,7 @@
 
 # PUT(UPDATE)
 # DELETE(DELETE)
+=======
+## find().pretty()
+ - 사람이 parsing 하기 좋은 format으로 return 한다. 
+>>>>>>> 079ed52ed548405b3f04d33657132b8128359823
